@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+packages/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# IIS Express
+.iisexpress/
+
+# Node
+node_modules/
+
+# Publish output
+*/publish/
+
+# Others
+*.cache
+*.log

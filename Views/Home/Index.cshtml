@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<style>
+    .home-container {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+        .home-container h1 {
+            color: #4e73df;
+            margin-bottom: 10px;
+        }
+
+        .home-container h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+    .btn-logout {
+        padding: 10px 20px;
+        background-color: #e74a3b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+        .btn-logout:hover {
+            background-color: #c0392b;
+        }
+</style>
+
+<div class="home-container">
+    <h1>✅ Lograste iniciar sesión correctamente</h1>
+
+    <h3>Hola, @Session["Usuario"] 👋</h3>
+
+    <a href="/Account/Logout" class="btn-logout">Cerrar sesión</a>
+</div>
