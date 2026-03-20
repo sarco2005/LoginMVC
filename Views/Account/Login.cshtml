@@ -86,6 +86,7 @@
 
     <div class="login-container">
         <div class="logo">Mi Sistema</div>
+        <p>HASH: @ViewBag.Hash</p>
         <h2>Iniciar Sesión</h2>
 
         @using (Html.BeginForm("Login", "Account", FormMethod.Post))
@@ -100,7 +101,9 @@
                 @Html.PasswordFor(m => m.Password, new { @placeholder = "Ingrese contraseña" })
             </div>
 
-            <button type="submit" class="btn-login">Ingresar</button>
+            <button type="submit" onclick="this.disabled=true; this.form.submit();">
+                Ingresar
+            </button>
         }
 
         @if (ViewBag.Error != null)
